@@ -1,0 +1,29 @@
+INSTALLATION
+============
+
+Step 1:
+=======
+
+add this line at the end of your bundles array inside the public function registerBundles() function (location: ezpublish/EzPublishKernel.php) to activate the bundle:
+
+new xrow\DownloadLibraryBundle\xrowDownloadLibraryBundle(),
+
+Step 2:
+=======
+
+add this to your ezpublish/config/routing.yml
+
+xrow_download_library:
+    resource: "@xrowDownloadLibraryBundle/Resources/config/routing.yml"
+    prefix:   /
+
+optional Step 3:
+================
+
+If you want to override the default settings then you follow the next steps:
+
+- add xrowlibdownload.yml to the ezpublish/config folder
+- activate xrowlibdownload.yml in config.yml like this:
+
+imports:
+    - { resource: xrowlibdownload.yml }

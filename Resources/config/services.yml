@@ -1,0 +1,7 @@
+parameters:
+#    xrow_download_library.example.class: xrow\DownloadLibraryBundle\Example
+
+services:
+#    xrow_download_library.example:
+#        class: %xrow_download_library.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

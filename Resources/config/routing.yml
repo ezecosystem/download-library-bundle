@@ -1,0 +1,3 @@
+xrow_download_library_startDownload:
+    path:     /download/combined/{source_node_id}/{current_subtree_mod_ts}
+    defaults: { _controller: xrowDownloadLibraryBundle:Download:startDownload }

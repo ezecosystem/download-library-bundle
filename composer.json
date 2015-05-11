@@ -1,0 +1,18 @@
+{
+    "name": "xrow/download-library-bundle",
+    "description": "Downloads a combined archive of images in a subtree.",
+    "type": "symfony-bundle",
+    "homepage": "http://www.xrow.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Björn Dieding",
+            "email": "bjoern@xrow.de",
+            "homepage": "http://www.xrow.de",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "xrow\\DownloadLibraryBundle\\": ""}
+    }
+}
