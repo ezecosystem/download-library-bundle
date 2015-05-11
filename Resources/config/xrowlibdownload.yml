@@ -1,2 +1,12 @@
 parameters:
     file_prefix: "xrowlibdownload"
+    check_existance_how: "all"
+    destination_path: "../ezpublish_legacy/var/storage/original/application/"
+    var_root: "../ezpublish_legacy"
+    depth: 1
+    white_list_classes:
+        - article
+        - folder
+    white_list_fields:
+        - image
+        - image_panorama
