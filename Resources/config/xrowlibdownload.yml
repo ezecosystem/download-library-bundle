@@ -5,8 +5,6 @@ parameters:
     var_root: "../ezpublish_legacy"
     depth: 1
     white_list_classes:
-        - article
-        - folder
+        - image
     white_list_fields:
         - image
-        - image_panorama
