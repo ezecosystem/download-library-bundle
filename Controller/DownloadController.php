@@ -32,6 +32,9 @@ class DownloadController extends Controller
             $file->folder_location = $destination_path;
 
             $repository = $this->container->get( 'ezpublish.api.repository' );
+
+            $repository->setCurrentUser( $repository->getUserService()->loadUserByLogin( 'admin' ) );
+
             $source_node = $repository->getLocationService()->loadLocation( $file->source_node_id );
 
             if ( is_object($source_node) )
