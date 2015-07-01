@@ -33,6 +33,7 @@ class DownloadController extends Controller
 
             $repository = $this->container->get( 'ezpublish.api.repository' );
 
+            //next line should be removed once we login on new stack only and dont mix legacy with 5.x anymore
             $repository->setCurrentUser( $repository->getUserService()->loadUserByLogin( 'admin' ) );
 
             $source_node = $repository->getLocationService()->loadLocation( $file->source_node_id );
